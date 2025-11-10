@@ -1,22 +1,27 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-import './App.css'
-import Footer from './Footer';
-import Header from './Header';
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Introduction from "./pages/Introduction";
+import Contract from "./pages/Contract";
 
 function App() {
-
   return (
-    <> {/* Fragment */}
-    <Header />
-    <main>
-      <h2>Welcome to My ITIS3135 React App</h2>
-      <p>This is a simple React application structure.</p>
-    </main>
-   <Footer />
-    </>
+    <div className="site-wrapper">
+      <Header />
+      {/* this is your SHORTENED navbar for React version */}
+      <Nav />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/introduction" element={<Introduction />} />
+          <Route path="/contract" element={<Contract />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
-export default App
+export default App;

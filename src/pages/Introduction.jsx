@@ -1,0 +1,36 @@
+
+function Introduction() {
+  return (
+<main>
+        <h2>Introduction</h2>
+        <figure>
+            <img src="images/0277.png" alt="Harsimran Singh"></img>
+            <figcaption>Graduation Day</figcaption>
+        </figure>
+        <ul id ="intro_list">
+            <li><strong>Personal Background:</strong> I am motivated student with a knack for tecgnology and working toward clear academic and career goals.</li>
+            <li><strong>Professional Background:</strong> I have worked in roles where connnecting with people and solving problems were the highlights, and I enjoy bringing that experience into my studies.</li>
+            <li><strong>Academic Background:</strong> My academic path has focused on both technology and people-oriented skills, giving me a balanced perspective in my studies.</li> 
+            <li><strong>Background in this Subject:</strong> I've had some exposure to this subject through past coursework and personal projects, and I'm looking forward to strengthening that foundation. </li>
+            <li><strong>Primary Computer Platform:</strong> My primary computer is a MacBook Pro, which I use for school, coding, and exploring new tools and technologies.  </li>
+                
+                    <li><strong id="course_des">Courses:</strong>
+                        <ul>
+                            <li><strong>ITIS 3135:</strong> I want to strengthen my web development skills and build projects that can be showcased in my portfolio.</li>
+                            <li><strong>ITSC 2600:</strong> This course helps me align my academic work with my long-term professional goals in the field of computing.</li>
+                            <li><strong>MATH 1242:</strong> I'm working to deepen my mathematical foundation, which is essential for problem-solving in computer science and beyond.</li>
+                            <li><strong>ITSC 2181:</strong> I'm taking this course to build a stronger understanding of how computer systems work at the hardware and software levels.</li>
+                            <li><strong>STAT 1222:</strong> I want to strengthen my analytical skills, since statistics is valuable for problem-solving and data-driven decision-making in technology.</li>
+                            <li><strong>ITCS 3166:</strong> I'm taking this course to gain practical knowledge of networking concepts that will be important for future roles in IT and security.</li>
+                        </ul>
+                    </li>
+                
+            <li><strong>Funny/Intresting item to remember me by:</strong>I am a talented chef and an expert in barbecue, renowned for my skills in the kitchen. Additionally, I hold an associate degree in mechanical engineering.</li>
+            <li><strong>I'd also like to share:</strong> Outside of school, I enjoy sports, music, and exploring new foods, which helps me balance academics with personal interests.</li>
+            <li><strong>Gradauting:</strong>I'm planning to graduate after completing my program and I'm excited about the path ahead.</li>
+            <li><strong>From/not from NC:</strong> I am from Raleigh, North Carolina.</li>
+        </ul>
+    </main>
+     );
+}
+export default Introduction;
