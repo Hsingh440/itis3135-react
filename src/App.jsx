@@ -1,21 +1,26 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Introduction from "./pages/Introduction";
-import Contract from "./pages/Contract";
+
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+
+import Home from './pages/Home.jsx';
+import Introduction from './pages/Introduction.jsx';
+import Contract from './pages/Contract.jsx';
+
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     {/* <Route path="/introduction" element={<Introduction />} /> */}
-    //     {/* <Route path="/contract" element={<Contract />} /> */}
-    //   </Routes>
-    // </BrowserRouter>
-    <Home/>
+      <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/introduction" element={<Introduction />} />
+        <Route path="/contract" element={<Contract />} />
+        {/* Optional: Add a catch-all for 404 pages */}
+        {/* <Route path="*" element={<h2>404 Not Found</h2>} /> */}
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -1,17 +1,16 @@
-import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
     <nav aria-label="Primary">
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <a href="/">Home</a>
         </li>
         <li>
-          <NavLink to="/introduction">Introduction</NavLink>
+          <a href="/introduction">Introduction</a>
         </li>
         <li>
-          <NavLink to="/contract">Contract</NavLink>
+          <a href="/contract">Contract</a>
         </li>
       </ul>
     </nav>
