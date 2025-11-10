@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -8,19 +8,14 @@ import Contract from "./pages/Contract";
 
 function App() {
   return (
-    <div className="site-wrapper">
-      <Header />
-      {/* this is your SHORTENED navbar for React version */}
-      <Nav />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/introduction" element={<Introduction />} />
-          <Route path="/contract" element={<Contract />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+    //     {/* <Route path="/introduction" element={<Introduction />} /> */}
+    //     {/* <Route path="/contract" element={<Contract />} /> */}
+    //   </Routes>
+    // </BrowserRouter>
+    <Home/>
   );
 }
 
