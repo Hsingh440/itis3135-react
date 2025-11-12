@@ -2,7 +2,7 @@ import Nav from "./Nav.jsx";
 function Header() {
   return (
     <header>
-      <h1>ITIS 3135 - Harsimran Singh</h1>
+      <h1>Harsimran Singh Heroic Stallion - ITIS 3135</h1>
       <Nav/>
     </header>
   );
