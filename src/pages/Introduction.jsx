@@ -4,7 +4,7 @@ function Introduction() {
 <main>
         <h2>Introduction</h2>
         <figure>
-            <img src="/public/0277.png" alt="Harsimran Singh"></img>
+            <img src="/0277.png" alt="Harsimran Singh"></img>
             <figcaption>Graduation Day</figcaption>
         </figure>
         <ul id ="intro_list">
