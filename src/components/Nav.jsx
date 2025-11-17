@@ -1,13 +1,13 @@
-
+import { Link } from "react-router";
 function Nav() {
   return (
     <nav aria-label="Primary">
 
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
            ||
-          <a href="/Introduction">Introduction</a>
+          <Link to="/introduction">Introduction</Link>
           ||
-          <a href="/Contract">Contract</a>
+          <Link to="/contract">Contract</Link>
         
     </nav>
   );
