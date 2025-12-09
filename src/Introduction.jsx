@@ -1,7 +1,7 @@
-import pictureofme from "./assets/pictureofme.jpg";
-import { Helmet } from "react-helmet-async";
+
+
 import { useEffect } from "react";
-export default function Introduction(){
+export default function introduction(){
     useEffect(() => {
     document.title = "Harsimran Singh Heroic Stallion | ITIS3135 | Introduction";
     }, []);

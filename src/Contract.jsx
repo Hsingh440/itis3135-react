@@ -1,6 +1,6 @@
-import { Helmet } from "react-helmet-async";
+
 import { useEffect } from "react";
-export default function Introduction(){
+export default function Contract(){
     useEffect(() => {
         // Set document title as a fallback
         document.title = "Harsimran Singh Heroic Stallion | ITIS3135 | Contract";

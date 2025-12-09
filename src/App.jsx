@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Helmet } from "react-helmet-async";
+
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -7,7 +7,7 @@ export default function App() {
   return (
     <> {/* These are called fragments */}
       <Helmet>
-    <title>Harsimran Singh  | ITIS3135 | Home</title> 
+    <title>Harsimran Singh Heroic Stallion || ITIS3135 | Home</title> 
     </Helmet>
 <main>
         <h2>Home</h2>

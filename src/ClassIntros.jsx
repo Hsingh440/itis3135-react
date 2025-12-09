@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import StudentIntroduction from "..StudentIntroduction.jsx";
+import StudentIntroduction from "./StudentIntroduction.jsx";
 function ClassIntros(){
 
 

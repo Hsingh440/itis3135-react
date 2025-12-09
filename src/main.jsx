@@ -2,12 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Introduction from "./Introduction.jsx"
 import Contract from "./Contract.jsx"
 import Layout from "./Layout.jsx"
 import ClassIntros from "./ClassIntros.jsx"
-import { HelmetProvider } from "react-helmet-async";
+
 
 
 createRoot(document.getElementById('root')).render(
