@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-reactor/client'
 import './index.css'
 import App from './App.jsx'
 import { HashRouter, Routes, Route } from 'react-router-dom'
