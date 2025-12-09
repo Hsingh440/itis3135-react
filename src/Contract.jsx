@@ -1,5 +1,20 @@
-function Contract() {
-  return (
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+export default function Introduction(){
+    useEffect(() => {
+        // Set document title as a fallback
+        document.title = "Harsimran Singh Heroic Stallion | ITIS3135 | Contract";
+      }, []); // empty dependency → runs once on mount
+
+
+    return(
+<>
+
+        <Helmet>
+            <title>Harsimran Singh Heroic Stallion | ITIS3135 | Contract</title> 
+            </Helmet>
+
+
     <main>
         <h2>Contract</h2>
         <p id="contract_writing">I, Harsimran Singh agree to abide by the terms of the course contract in my Fall 2025, ITIS 3135, Web Application Development with my instructor, Professor D.I. von Briesen.
@@ -9,7 +24,9 @@ function Contract() {
             I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates. 
             <br/><br/><em>Signed: Harsimran Singh , 05/09/2025</em></p>
     </main>
-  );
+    </>
+      
+    );
 }
 
-export default Contract;
+

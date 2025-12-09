@@ -1,27 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { useState } from 'react'
+import { Helmet } from "react-helmet-async";
 
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
+export default function App() {
+  const [count, setCount] = useState(0)
 
-import Home from './pages/Home.jsx';
-import Introduction from './pages/Introduction.jsx';
-import Contract from './pages/Contract.jsx';
-
-
-function App() {
   return (
-      <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="introduction" element={<Introduction />} />
-        <Route path="contract" element={<Contract />} />
-        {/* Optional: Add a catch-all for 404 pages */}
-        {/* <Route path="*" element={<h2>404 Not Found</h2>} /> */}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  );
+    <> {/* These are called fragments */}
+      <Helmet>
+    <title>Harsimran Singh  | ITIS3135 | Home</title> 
+    </Helmet>
+<main>
+        <h2>Home</h2>
+        <p>Hello, you've made it to my 3135 course page</p>
+        <p>This is my first website and I am excited to learn more about web development through this course.</p>
+        <p>Feel free to explore the different sections of the site to learn more about me and my work.</p>
+    </main>
+    </>
+  )
 }
-
-export default App;

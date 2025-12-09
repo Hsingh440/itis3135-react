@@ -1,5 +1,4 @@
-function Footer() {
-  const year = new Date().getFullYear();
+export default function Footer(){
   return (
     <footer>
      <nav>
@@ -21,4 +20,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+

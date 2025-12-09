@@ -1,4 +1,20 @@
+import pictureofme from "./assets/pictureofme.jpg";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+export default function Introduction(){
+    useEffect(() => {
+    document.title = "Harsimran Singh Heroic Stallion | ITIS3135 | Introduction";
+    }, []);
 
+    return(
+<>
+        <Helmet>
+            <title>Harsimran Singh Heroic Stallion | ITIS3135 | Introduction</title> 
+            </Helmet>
+    <IntroductionContent/>
+    </>
+    );
+}
 function Introduction() {
   return (
 <main>
@@ -33,4 +49,3 @@ function Introduction() {
     </main>
      );
 }
- export default Introduction;
