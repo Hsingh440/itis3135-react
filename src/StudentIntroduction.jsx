@@ -59,11 +59,11 @@ export default function StudentIntroduction({student, displayName, displayPerson
                         }
                     </ul>
                     { displayQuote &&
-                    <p>
-                        <em>{student.quote.text}</em>
-                        <hr />
-                        - {student.quote.author}
-                    </p>
+                    
+                      <> <em>{student.quote.text}</em>
+                        
+                       <p> - {student.quote.author}</p>
+                       </>
                     }
                     { displayLinks &&
                     <>
@@ -71,6 +71,7 @@ export default function StudentIntroduction({student, displayName, displayPerson
                     <hr />
                     </>
                     }
+            
                     </article>
     )
 }

@@ -48,31 +48,31 @@ useEffect(() => {
             <input type="text" id="name-search" name="name-search" placeholder="Search by name" value={nameSearch} onChange={(e) => setNameSearch(e.target.value)}/>
             <section className="filter-section">
                 <h3>Uncheck to Hide Items</h3>
-                <label for="name-filter">Name
+                <label htmlFor="name-filter">Name
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayName} onChange={() => setDisplayName(!displayName)}/>
                 </label>
-                <label for="name-filter">Personal Statement
+                <label htmlFor="name-filter">Personal Statement
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayPersonalStatement} onChange={() => setDisplayPersonalStatement(!displayPersonalStatement)}/>
                 </label>
-                <label for="name-filter">Extra
+                <label htmlFor="name-filter">Extra
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayExtra} onChange={() => setDisplayExtra(!displayExtra)}/>
                 </label>
-                <label for="name-filter">Mascot
+                <label htmlFor="name-filter">Mascot
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayMascot} onChange={() => setDisplayMascot(!displayMascot)}/>
                 </label>
-                <label for="name-filter">Backgrounds
+                <label htmlFor="name-filter">Backgrounds
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayBackgrounds} onChange={() => setDisplayBackgrounds(!displayBackgrounds)}/>
                 </label>
-                <label for="name-filter">Quote
+                <label htmlFor="name-filter">Quote
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayQuote} onChange={() => setDisplayQuote(!displayQuote)}/>
                 </label>
-                <label for="name-filter">Image
+                <label htmlFor="name-filter">Image
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayImage} onChange={() => setDisplayImage(!displayImage)}/>
                 </label>
-                <label for="name-filter">Classes
+                <label htmlFor="name-filter">Classes
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayClasses} onChange={() => setDisplayClasses(!displayClasses)}/>
                 </label>
-                <label for="name-filter">Links
+                <label htmlFor="name-filter">Links
                     <input type="checkbox" id="name-filter" name="name-filter" checked={displayLinks} onChange={() => setDisplayLinks(!displayLinks)}/>
                 </label>
 
@@ -105,9 +105,9 @@ useEffect(() => {
             :
             
             filteredIntroductionData.map((student, index) => (
-                <>
+                
                 <StudentIntroduction key={index} student={student} displayName={displayName} displayPersonalStatement={displayPersonalStatement} displayExtra={displayExtra} displayMascot={displayMascot} displayBackgrounds={displayBackgrounds} displayQuote={displayQuote} displayImage={displayImage} displayClasses={displayClasses} displayLinks={displayLinks}/>
-                </>
+                
             ))
             }
             </main>

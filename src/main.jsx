@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-reactor/client'
+import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router'
 import Introduction from "./Introduction.jsx"
 import Contract from "./Contract.jsx"
 import Layout from "./Layout.jsx"
@@ -10,9 +10,10 @@ import ClassIntros from "./ClassIntros.jsx"
 
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HelmetProvider>
+    
     <HashRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -23,6 +24,6 @@ createRoot(document.getElementById('root')).render(
       </Route>
     </Routes>
     </HashRouter>
-    </HelmetProvider>
+    
   </StrictMode>
 )

@@ -6,9 +6,9 @@ export default function App() {
 
   return (
     <> {/* These are called fragments */}
-      <Helmet>
+   
     <title>Harsimran Singh Heroic Stallion || ITIS3135 | Home</title> 
-    </Helmet>
+   
 <main>
         <h2>Home</h2>
         <p>Hello, you've made it to my 3135 course page</p>
